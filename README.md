@@ -1,1 +1,1 @@
-# k8s-fast-cgm-api
+# k8s-application-repo
