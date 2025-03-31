@@ -18,7 +18,7 @@ spec:
         runAsGroup: 1000
       containers:
         - name: fast-cgm-api
-          image: mauriquev/fast-cgm-api:4b4c11ea7405dc408684eaa5be8a9d6db1cb1522
+          image: mauriquev/fast-cgm-api:26f56668da715d2b67e4dd63fd53ab357f8825db
           ports:
             - containerPort: 8000
 
