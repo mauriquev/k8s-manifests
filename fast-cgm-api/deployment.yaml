@@ -19,10 +19,17 @@ spec:
       containers:
         - name: fast-cgm-api
           image: mauriquev/fast-cgm-api:0c5e8f2c78f4b6736592d8fd9cd3e830512757af
+          envFrom:
+          - secretRef:
+              name: fast-cgm-db-credentials
+          - secretRef:
+              name: fast-cgm-dexcom-credentials
           ports:
-            - containerPort: 8000
+          - containerPort: 8000
 
           securityContext:
             allowPrivilegeEscalation: false
             runAsNonRoot: true
-      resources: []
+            runAsUser: 1000
+            runAsGroup: 1000
+      
