@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: fast-cgm-api
+  name: fast-cgm-server
   namespace: fast-cgm-api
 spec:
   selector:
