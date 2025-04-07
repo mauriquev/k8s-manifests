@@ -18,7 +18,7 @@ spec:
         runAsGroup: 1000
       containers:
         - name: fast-cgm-api
-          image: mauriquev/fast-cgm-api:e0d34e8ce93ef45cff6c50b967b18fe37e458a94
+          image: mauriquev/fast-cgm-api:80d9791f34973c08c428b383f3b17216b2b6eaf0
           envFrom:
           - secretRef:
               name: fast-cgm-db-credentials
